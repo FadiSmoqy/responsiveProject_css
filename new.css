@@ -1,0 +1,222 @@
+/*------------------navbar----------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-section{
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(90deg,rgba(0, 0, 0, 0.411), rgba(7, 14, 10, 0.411) ) ,url('./villageTemplate-img/asphalt-dark-dawn-endless-531321.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+.navbar{
+    background: black;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    min-width: 100vw;
+    height: 50px;
+    padding: 0 30px;
+}
+.fa-business-time{
+    font-size: 25px;
+    transition: all 100ms linear;
+}
+.fa-business-time:hover{
+    font-size: 30px;
+    color: #00c3ff;
+}
+.navbar-menu{
+    padding-right: 20px;
+    list-style: none;
+}
+.navbar-menu li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.navbar-menu li a{
+    text-decoration: none;
+    color: #646464;
+    transition: color 0.5s ease;
+}
+.navbar-menu li a:hover{
+    color:white; 
+}
+/*navbar End*/
+/*----------------main-header--------------------*/
+
+.main-header-title{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 80px;
+    text-shadow: -2px -2px rgb(104, 43, 43);
+}
+/*----------main-header-boxes----------*/
+.big-box{
+    display: flex;
+    justify-content: space-around;
+}
+.header-allbox{
+    height: 100%;
+    width: 500px;
+    padding: 100px 60px ;
+    text-align: center;
+}
+.header-sircle{
+    background: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+}
+.header-allbox h3{
+    padding-bottom: 20px;
+}
+.header-sircle-box{
+    height: 50%;
+    width: 25%;
+    position: absolute;
+    left: 37%;
+    bottom: 23%;
+    border: 2px solid white;
+}
+/*main-header-End*/
+/*----------------------footer-section--------------------*/
+.footer-section{
+    height: 35vh;
+    width: 100vw;
+}
+.footer-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.item-1{
+    margin-right: 100px;
+    width: 45%;
+}
+.item-2{
+    width: 35%;
+}
+.footer-box-title, .footer-box-text{
+    color: black;
+    padding-top: 20px;
+}
+
+
+
+
+/*-----------------Media queries-----------------------------*/
+
+@media screen and (max-width: 1350px){
+    .header-allbox{
+        padding: 100px 40px;
+    }
+    .main-header-title{
+        font-size: 55px;
+    }
+}
+@media screen and (max-width: 1100px){
+    /*----------header-section----------------------*/
+    .header-section{
+        height: auto;
+    }
+    .main-header-title{
+        font-size: 50px;
+    }
+    /*--------------header-section-boxes--------------*/
+    .big-box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    .header-allbox{
+        height: 100%;
+        width: 500px;
+        padding: 100px 60px ;
+        text-align: center;
+ 
+    }
+    .header-box-1{
+        width: 400px;
+        padding: 0 0 30px 20px;
+        align-self: flex-end;
+    }
+    .header-box-2{
+        width: 400px;
+        padding: 0 20px 60px 0px;
+
+    }
+    .header-box-3{
+        padding: 60px 0 60px 60px;
+        height: 100%;
+        width: 600px;
+    }
+    .header-sircle{
+        background: red;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .header-allbox h3{
+        padding-bottom: 20px;
+    }
+    .header-sircle-box{
+        height: 50%;
+        width: 25%;
+        position: absolute;
+        left: 37%;
+        bottom: 23%;
+        border: 2px solid white;
+    }
+    /*------------footer------------*/
+    .item-1{
+        margin-right: 50px;
+        width: 50%;
+    }
+
+    
+}
+ @media screen and (max-width: 850px){ 
+    .header-sircle{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .header-allbox{
+        height: 100%;
+        width: 500px;
+        padding: 30px 60px ;
+        text-align: center;
+    }
+    .header-sircle{
+        height: 80px;
+        width: 80px;
+    }
+    .header-box-1{
+        width: 400px;
+        padding: 0 0 100px 20px;
+    }
+} 
+
+@media screen and (width:500px){
+    
+}

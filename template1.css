@@ -31,19 +31,6 @@
 
 /*--------header start---------------*/
 
-/*
-    <section class="header">
-        <h1 class="header-title">THE SIMPLE COMPANY</h1>
-        <div class="header-box-1">
-        <div class="header-sircle">
-            <div class="header-sircle-box"></div>
-        </div>
-            <h3></h3>
-            <p></p>
-        </div>
-    </section>
-*/
-
 .header{
     width: 100vw;
     height: 96.1vh;
@@ -94,15 +81,15 @@
     position: relative;
 }
 .header-sircle-box, .header-sircle-box-3{
-    height: 50px;
-    width: 27px;
+    height: 50%;
+    width: 25%;
     position: absolute;
-    left: 37%;
-    bottom: 25%;
+    left: 35%;
+    bottom: 23%;
     border: 2px solid white;
 }
 /*End*/
-
+/*------------------footer-------------------------------------------*/
 .footer{
     width: 100vw;
     height: 35vh;
@@ -127,3 +114,7 @@
     margin: 10px;
 
 }
+.items p{
+    padding-top: 20px;
+}
+
