@@ -1,9 +1,10 @@
 /*------------------navbar----------------------------*/
 *{
+    color: #000000;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: white;
+
     font-family: Arial, Helvetica, sans-serif;
 }
 .header-section{
@@ -27,6 +28,7 @@
 .fa-business-time{
     font-size: 25px;
     transition: all 100ms linear;
+    color: #00c3ff;
 }
 .fa-business-time:hover{
     font-size: 30px;
@@ -54,6 +56,7 @@
 /*----------------main-header--------------------*/
 
 .main-header-title{
+    color: #fff;
     text-align: center;
     padding-top: 60px;
     font-size: 80px;
@@ -129,10 +132,6 @@
     }
 }
 @media screen and (max-width: 1100px){
-    /*----------header-section----------------------*/
-    .header-section{
-        height: auto;
-    }
     .main-header-title{
         font-size: 50px;
     }
@@ -160,7 +159,7 @@
 
     }
     .header-box-3{
-        padding: 60px 0 60px 60px;
+        padding: 60px 30px 60px 30px;
         height: 100%;
         width: 600px;
     }
@@ -193,6 +192,12 @@
     
 }
  @media screen and (max-width: 850px){ 
+     .main-header-title{
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
     .header-sircle{
         height: 100px;
         width: 100px;
@@ -211,12 +216,34 @@
         height: 80px;
         width: 80px;
     }
-    .header-box-1{
-        width: 400px;
-        padding: 0 0 100px 20px;
-    }
 } 
 
-@media screen and (width:500px){
-    
+@media screen and (max-width:500px){
+    .main-header-title{
+        font-size: 40px;
+        
+    }
+    .navbar-menu{
+        padding-right: 5px;
+    }
+    .navbar-menu li a{
+        padding: 0 10px;
+        font-size: 15px;
+    }
+    .navbar-menu li {
+        padding: 0 ;
+    }
+    .navbar{
+        padding: 0 20px;
+    }
+    .header-allbox{
+        height: 100%;
+        width: 500px;
+        padding: 30px;
+        align-items: center;
+    }
+    .header-box-3{
+        padding-top: 100px;
+        
+    }
 }
